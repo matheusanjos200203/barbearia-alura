@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.headerBox {
+    width: 80vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+.services{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.services li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: #000000 1px solid;
+    border-radius: 10px;
+}
+.services li:hover{
+    border-color: #C78C19;
+}
+.services li:active{
+    border-color: #088c19;
+}
+.services li h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.services li:hover h2{
+    font-size: 35px;
+}
+.services li .description{
+    font-size: 18px;
+}
+.services li .price{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0 ;
+}
+
+form label, form fieldset legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.standardInput{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.send{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.send:hover{
+    background-color: darkorange;
+    transform: scale(120%);
+}
+
+table{
+    margin: 20px 0 40px 0;
+}
+
+table thead{
+        background-color: darkgray;
+        color: white;
+        font-weight: bold;
+}
+
+table td, table thead th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyRight{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:940px){
+    .headerBox, main, form{
+        text-align: center;
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li{
+        padding: 5px;
+        margin: 0 auto;
+    }
+    form label, form legend{
+        margin: 0 auto 10px;
+    }
+    .standardInput{
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+    .checkbox{
+        margin: 0 5px;
+    }
+    .send{
+        width: 90%;
+    }
+    table#Funcionamento{
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+}
+
+@media screen and (min-width:941px){
+    main, form{
+        width: 95%;
+        margin: 0 auto;
+    }
+    form{
+        margin-top: 40px;
+    }
+    form label, form fieldset legend{
+        margin-bottom: 10px;
+    }
+    form .standardInput{
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+    .send{
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+    .send:hover{
+        transform: none;
+    }
+    table#Funcionamento{
+        width: 95%;
+        margin: 0 auto 40px;
+    }
+}
